@@ -1,1 +1,20 @@
-
+    # The onconfig file must be in the /opt/informix/etc directory. There should already be a standard onconfig file there named onconfig.std. 
+    # The contents below fit the system needs for this example. You may need to add extra variables or you may not need all of the variables shown below. 
+    # The onconfig file contains the following contents:
+    # The DBSERVERNAME refers to the unique name associated with this specific database server instance.
+    # The DUMPDIR refers to the directory in which the server dumps shared memory and messages.
+    # The LOGDIR is the log directory for the IDS instance.
+    # The MSGPATH is the full path name of the message log file.
+    # The PHYSDBS is the name of the dbspce that contains the physical log.
+    # The ROOTNAME is the name for the root dbspace.
+    # The ROOTPATH is the full path name of the initial chunk of the root dbspace.
+    # The ROOTSIZE is the size of the initial chunk of the root dbspace.
+        DBSERVERNAME UXDev
+        SERVERNUM 1 #0 En caso de no haber instalado un servidor de BD
+        DUMPDIR /tmp/informix
+        LOGDIR /opt/informix/logdir #NOT FOUND
+        MSGPATH /opt/informix/logdir/info.log
+        PHYSDBS rootdbs				#NOT FOUND
+        ROOTNAME rootdbs			
+        ROOTPATH /opt/informix/logdir/rootdbs
+        ROOTSIZE 30000
