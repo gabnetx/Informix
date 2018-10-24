@@ -1,0 +1,10 @@
+# VAR ENVIROMENTS
+# (/etc/profile or /etc/bashrc)
+
+INFORMIXDIR=/opt/informix
+INFORMIXSERVER=UXDev
+SQLHOSTS=/opt/informix/etc/sqlhosts
+ONCONFIG=onconfig
+PATH=$PATH:$INFORMIXDIR/bin
+
+export INFORMIXDIR INFORMIXSERVER SQLHOSTS ONCONFIG PATH
